@@ -32,8 +32,9 @@ It can handle:
     This way fixed name references can be defined to prevent links from going
     stale after headings have been changed.
 - **local link format of pelican**:
-    mdnav handles `|filename| ...` links as expected, for example
-    `[link](|filename|./second.md)`.
+    mdnav handles `|filename| ...` and `{filename} ...` links as expected, for
+    example `[link](|filename|./second.md)` and
+    `[link]({filename}../posts/second.md)`.
 
 Note, all links above are functional with vim and mdnav installed.
 While mdnav is inspired by [follow-markdown-links][fml], mdnav can handle many
